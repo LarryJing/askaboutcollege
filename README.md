@@ -12,7 +12,20 @@ Users will open the website and be able to browse questions to answer and receiv
 -variable: data type
 
 ## Views
+flowchart kinda thing
 
 ## Controllers/Routes
+-title
+  -get/post/etc (url)
 
 ## Other
+
+# Milestones
+## Tuesday
+Started coding
+## Wednesday
+MVP
+## Thursday
+Feature completion
+## Friday
+Polish
