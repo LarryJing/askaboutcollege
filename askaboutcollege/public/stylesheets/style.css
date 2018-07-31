@@ -1,0 +1,290 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+form{
+max-width: 20em;
+}
+
+.square{
+  width: 280px;
+  border:1px solid lightgray;
+  padding:20px ;
+  margin-top: 100px;
+  background: #ffffff;
+}
+
+.homeCarousel {
+  padding-bottom: 15px;
+}
+
+.topnav {
+  /* overflow: hidden; */
+  background-color: #000000;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 16px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color :aqua;
+  color: black;
+}
+
+.topnav img{
+  padding-left: 12px;
+  padding-bottom: 10px;
+  margin-bottom:-16px;
+  margin-top:-8px;
+
+}
+
+
+.login-newuser {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 10;
+  left: 0;
+  background-color: rgb(43, 41, 43);
+  overflow-x: hidden;
+  padding-top: 15px;
+ }
+
+ .sidenav a {
+  padding: 6px 6px 6px 6px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+ }
+
+ .sidenav a:hover {
+  color:lightgrey;
+ }
+
+
+.dropbtn {
+  background-color:#000000;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 11px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: lightgray;
+                          color:black;}
+
+h4{
+  padding-top:20px;
+
+
+}
+
+.homegrid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+  padding: 15px 5px 5px 5px;
+  grid-template-areas:"a a b c"
+                      "a a b c"
+                      "a a d d"
+                      "a a d d";
+}
+.a {
+  grid-area: a;
+  background-color: #a5c7ff;
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #0021ff;
+}
+
+.b {
+  grid-area: b;
+  background-color: #C3FF7F;
+  border-radius: 5px;
+}
+
+.c {
+  grid-area: c;
+  background-color: #9988FF;
+  border-radius: 5px;
+}
+
+.d {
+  grid-area: d;
+  background-color: #FAC24D;
+  border-radius: 5px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  padding: 1em;
+}
+
+.abouthome {
+  padding-top: 15px;
+  text-align: center;
+  max-width: 100%;
+  right: 29px;
+  color: #ff7a51;
+}
+.description {
+  display: inline-block;
+  width: 500px;
+  color: black;
+  font-family: "Verdana", sans-serif;
+}
+
+.numbercolleges {
+  text-align: center;
+  color: #96ffb6;
+  border-style: solid;
+  border-color: coral;
+}
+
+ .img_size{
+      width:100%;
+      height: 50%;
+
+ }
+
+header {
+  background-color: #F0F8FF;
+  padding: 140px 0 300px;
+  background-image: url("http://www.landezine.com/wp-content/uploads/2011/02/4-gh3_landscape-architecture-trinity-college-park.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+ }
+
+ span{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  padding-top: 10px;
+  white-space: nowrap;
+  font-family: 'Ubuntu', sans-serif;
+  border-bottom:2px solid #000;
+ }
+.font_style{
+font-family: Impact, Charcoal, sans-serif;
+}
+.font_style_one{
+  font-family: 'Arizonia';
+}
+.font_style_two{
+  font-family:Luminari, fantasy;
+}
+.font_style_three{
+  padding-top: 30px;
+  color:black;
+  font-family:Blippo, fantasy;
+}
+.font_style_four{
+
+  font-family: Apple Chancery, cursive;
+}
+.font_style_five{
+  font-family: Brush Script MT, Brush Script Std, cursive;
+}
+.carousel-caption {
+  color: white;
+}
+
+.container-topics{
+
+  background-size: cover;
+
+}
+.post_background{
+
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvZrOq38fr702KR8toFsC-x-5ZGBHsfXVMe6aqRKV9SagquPoGVA");
+  padding:20px 20px;
+  background-repeat: no-repeat;
+}
+
+.topnav img{
+    height: 30px;
+    margin-right: 8px;
+    width: 80px;
+    align-content: center;
+  }
+  .login-container{
+    background-image: url("https://timedotcom.files.wordpress.com/2016/09/harvard-campus.jpg");
+    background-size: 100%;
+    margin-bottom: 200px;
+}
+
+.login-newuser{
+    padding-bottom:300px;
+}
+
+.new-post{
+  padding:100px;
+  padding-left:500px;
+}
+
+.after-carousel{
+  background-color: #e0e0eb;
+  padding-bottom: 20px;
+}
+
+.after-carousel p{
+  line-height: 1.5;
+}
+
+.after-carousel h1{
+  color: black;
+
+}

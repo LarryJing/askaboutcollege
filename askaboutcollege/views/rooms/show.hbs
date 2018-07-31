@@ -1,0 +1,51 @@
+<div class="row justify-content-center" style="padding-top: 20px">
+  <h1>{{room.topic}}</h1>
+  </div>
+  <p class="text-center" >topic by {{room.loginname.username}}</p>
+<div class="row justify-content-center button">
+<a href="/rooms/{{room.id}}/posts/new" class="btn btn-dark">Ask a Question</a>
+</div>
+<div class="row justify-content-center">
+  <div class="col-6">
+    <p>{{#each posts as |post|}}</p>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h3 class="card-title text-center">{{post.subject}}</h3>
+          <p>{{post.body}}</p>
+        </div>
+
+        <div class="card-footer text-muted  text-right">
+
+        <a href="/rooms/{{../room.id}}/posts/{{post.id}}/comments/new" button type="button" class="btn btn-outline-dark btn-sm">Reply</a>
+      </div>
+      </div>
+      
+          <!----<span class="points-span">{{post.points}} points </span>
+
+          <div class="btn-group btn-group-sm">
+            <form action="/rooms/{{post.room}}/posts/{{post.id}}" method="post" class="inline-form">
+              <input type="hidden" name="points" id="post-points" value="1">
+              <button type="submit" class="btn btn-success">+</button>
+            </form>
+            <form action="/rooms/{{post.room}}/posts/{{post.id}}" method="post" class="inline-form">
+            <input type="hidden" name="points" id="post-points" value="-1">
+            <button type="submit" class="btn btn-danger">-</button>
+            </form>
+          </div>
+          ------------>
+        
+      
+      
+      
+        <ul class ="list-group list-group-flush">
+          {{#each post.comments as |comment|}}
+          <li class="list-group-item">
+          <p>{{comment.body}}</p></li>
+          {{/each}}
+
+          {{/each}}
+          </div>
+          </ul>
+      </div>
+
+</div>

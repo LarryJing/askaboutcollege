@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    {{!-- <audio src="http://aimg8.dlszyht.net.cn/bg_music/683/1365158_0.mp3?t=9682" id="audio1" autoplay="true" loop="true"></audio> --}}
+
+      <div class="topnav">
+          <a href="/"><img src="https://lh6.googleusercontent.com/lj9EIkfqEUJHuBbU9l2hy652-wsfCjY7wspz9TLsrpf3J7bOooCpJi95EXNFd9w477VqxnCjPBnkUaGd8z-A=w1366-h613-rw"></a>
+          <a href="/">Home</a>
+
+          <div class="dropdown">
+
+            <button class="dropbtn">Topics</button>
+              <div class="dropdown-content">
+              <a href="/rooms">Room List</a>
+            </div>
+            </div>
+           {{#if currentUserId}}
+           <a class="nav-link"style="float:right"href="/logout">Log Out</a>
+           {{else}}
+            <a class="nav-link"style="float:right" href="/login">Sign in</a>
+           {{/if}}
+
+      </div>
+
+              <main>
+               {{{body}}}
+              </main>
+  </body>
+</html>

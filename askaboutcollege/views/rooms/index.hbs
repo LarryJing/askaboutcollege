@@ -1,0 +1,29 @@
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
+<header>
+        
+              <div class="container-topics">
+                    
+      <div width = "500px">
+        <div class="row justify-content-center"
+        <div class="col-md-5">
+      <ul class ="list-group col-4 text-center">
+        <h1 class="font_style_five" style="font-size:100px">Topics</h1>
+          {{#each rooms as |room|}}
+        
+            <div>
+            <a href= "/rooms/{{room.id}}"class="list-group-item list-group-item-action list-group-item-light">{{room.topic}}</a>
+        </div>
+          {{/each}}
+          <footer class = "text-center">
+          
+      </ul>
+      </div>
+      </div>
+      </div>
+    
+</header>
+
+
+
